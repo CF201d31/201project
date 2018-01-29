@@ -12,8 +12,6 @@ function handleClick(event) {
   var birthDate = event.target.userBirthDate.value;
   localStorage.setItem('userName',userName);
   determineDrinkingAge(new Date(birthDate + 'PST'));
-  // debugger;
-  console.log(typeof birthDate);
 }
 
 function determineDrinkingAge(birthDate) {
@@ -22,7 +20,6 @@ function determineDrinkingAge(birthDate) {
   } else {
     alert('Sorry, Charlie');
   }
-
 }
 
 getForm.addEventListener('submit', handleClick);
