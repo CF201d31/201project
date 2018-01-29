@@ -1,12 +1,18 @@
 'use strict';
 
-var questionForm = document.getElementById('question-form');
-
 //get username from local storage
 var username = localStorage.getItem('userName');
 
+var questionForm = document.getElementById('question-form');
+
+function displayName() {
+  var nameField = document.getElementById('name');
+  nameField.textContent = 'Hello ' + username + '!';
+}
+
 function handleQuestion(event) {
   event.preventDefault();
+  // grab form results
   var dayOfWeekQ = event.target.dayOfWeek.value;
   var timeOfDayQ = event.target.timeOfDay.value;
   var weatherQ = event.target.weather.value;
@@ -18,11 +24,9 @@ function handleQuestion(event) {
   var answerArray = [dayOfWeekQ, timeOfDayQ, weatherQ, marriedQ, kidsQ, drinksAlreadyQ,stressQ, debtQ];
   localStorage.setItem('answers', answerArray);
   // console.log(dayOfWeekQ, timeOfDayQ, weatherQ, marriedQ, kidsQ, drinksAlreadyQ,stressQ, debtQ);
-}
 
-function displayName() {
-  var nameField = document.getElementById('name');
-  nameField.textContent = 'Hello! ' + username + '!';
+  // go to next page
+  window.location.href = 'result.html';
 }
 
 questionForm.addEventListener('submit', handleQuestion);
