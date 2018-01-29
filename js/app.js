@@ -2,12 +2,9 @@
 
 var birthDate = document.getElementById('date');
 
-var currentDate {
-  this.d
-}
+var currentDate = new Date();
 
-function currentDate
-function bDayCheck(date, ) {
-  if(birthDate === )
-}
+function dateCheck() {
+  if(birthday)
+} 
 
