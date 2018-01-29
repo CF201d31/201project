@@ -18,9 +18,9 @@ function handleClick(event) {
 
 function determineDrinkingAge(birthDate) {
   if(birthDate <= drinkingDate) {
-    console.log('over 21');
+    window.location.replace('questions.html');
   } else {
-    console.log('No alc for you');
+    alert('Sorry, Charlie');
   }
   
 }
