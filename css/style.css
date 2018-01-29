@@ -1,5 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
-  background: linear-gradient(to bottom, steelblue, beige);
+  background: linear-gradient(steelblue, beige);
+  height: 100%;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -24,4 +30,8 @@ img {
   float: left;
   padding-top: 20px;
   padding-right: 20px;
+}
+
+video {
+  max-width: 100%;
 }
