@@ -19,7 +19,7 @@
         <option value="tuesday">Tuesday</option>
         <option value="wednesday">Wednesday</option>
         <option value="thursday">Thursday</option>
-        <option value="friday">Friday</option>
+        <option value="friday" selected>Friday</option>
         <option value="saturday">Saturday</option>
       </select>
 
@@ -28,12 +28,13 @@
         <option value="morning">Morning</option>
         <option value="afternoon">Afternoon</option>
         <option value="evening">Evening</option>
-        <option value="party-time">Party Time</option>
+        <option value="party-time" selected>Party Time</option>
         <option value="late night">Late Night</option>
       </select>
 
       <p>What's the weather?</p>
       <select name="weather" required>
+        <option selected disabled></option>
         <option value="sunny">Sunny</option>
         <option value="rainy">Rainy</option>
         <option value="snowy">Snowy</option>
@@ -47,12 +48,14 @@
 
       <p>Are you married?</p>
       <select name="married" required>
+        <option selected disabled></option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
       </select>
 
       <p>How many kids do you have?</p>
       <select name="kids" required>
+        <option selected disabled></option>
         <option value="noKid">None</option>
         <option value="oneKid">1</option>
         <option value="twoKids">2</option>
@@ -62,6 +65,8 @@
 
       <p>How many drinks have you already had?</p>
       <select name="drinksAlready" required>
+        <option selected disabled></option>
+        <option value="noDrink">None</option>
         <option value="oneDrink">1</option>
         <option value="twoDrinks">2</option>
         <option value="threeDrinks">3</option>
@@ -72,6 +77,8 @@
 
       <p>What is your current stress level?</p>
       <select name="stress" required>
+        <option selected disabled></option>
+        <option value="noStress">0</option>
         <option value="oneStress">1</option>
         <option value="twoStress">2</option>
         <option value="threeStress">3</option>
@@ -81,6 +88,7 @@
 
       <p>How much debt are you in?</p>
       <select name="debt">
+        <option selected disabled></option>
         <option value="maxed">My credit cards are maxed</option>
         <option value="pastDue">All my bills are past due</option>
         <option value="paycheck">I live paycheck to paycheck</option>
