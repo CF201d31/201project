@@ -20,4 +20,11 @@ function handleQuestion(event) {
   // console.log(dayOfWeekQ, timeOfDayQ, weatherQ, marriedQ, kidsQ, drinksAlreadyQ,stressQ, debtQ);
 }
 
+function displayName() {
+  var nameField = document.getElementById('name');
+  nameField.textContent = 'Hello! ' + username + '!';
+}
+
 questionForm.addEventListener('submit', handleQuestion);
+
+displayName();
