@@ -1,11 +1,16 @@
 'use strict';
 
-var birthDate = document.getElementById('date');
-
-var userName = document.addEventListener('nameDate')
+var getForm = document.getElementById('nameDate');
 var currentDate = new Date();
 
-function dateCheck() {
-  if(birthday)
-} 
+
+function handleClick(event) {
+  event.preventDefault();
+  var userName = event.target.name.value;
+  var birthDate = event.target.userBirthDate.value;
+  localStorage.setItem('userName',userName);
+}
+
+
+getForm.addEventListener('submit', handleClick);
 
