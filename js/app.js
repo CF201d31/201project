@@ -6,5 +6,4 @@ var currentDate = new Date();
 
 function dateCheck() {
   if(birthday)
-} 
-
+}

@@ -1,1 +1,27 @@
+body {
+  background: linear-gradient(to bottom, steelblue, beige);
+}
 
+h1 {
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: #a0ced9;
+}
+
+h2, p {
+  font-family: 'Shanti', sans-serif;
+  color: #ffc09f;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+div {
+  float: right;
+  padding: 0 20px 10px;
+}
+
+img {
+  border-radius: 50%;
+  float: left;
+  padding-top: 20px;
+  padding-right: 20px;
+}
