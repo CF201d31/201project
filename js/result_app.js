@@ -43,7 +43,12 @@ var questions = {
   oneDrink: 2,
   twoDrinks: 3,
   threePlusDrinks: 4,
-  
+  noStress: 1,
+  oneStress: 2,
+  twoStress: 3,
+  threeStress: 4,
+  fourStress: 5,
+  fiveStress: 6,
 };
 
 // functions
