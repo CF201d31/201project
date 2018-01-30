@@ -40,8 +40,10 @@ var questions = {
   partyTime: 4,
   lateNight: 5,
   noDrink: 1,
-  
-}
+  oneDrink: 2,
+  twoDrinks: 3,
+  threePlusDrinks: 4,
+};
 
 // functions
 
