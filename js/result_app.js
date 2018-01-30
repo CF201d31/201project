@@ -4,6 +4,9 @@
 var fAnswers = localStorage.answers.split(',');
 // get results from local storage
 
+var imgResults = [];
+
+var displayImg = document.getElementById('results');
 
 var questions = {
   monday: 1,
@@ -17,7 +20,7 @@ var questions = {
   no: 1,
   noKid: 0,
   oneKid: 1,
-  twoKid: 2,
+  twoKids: 2,
   threeKids: 3,
   fourPlusKids: 4,
   0: 1,
@@ -50,6 +53,15 @@ var questions = {
   fourStress: 5,
   fiveStress: 6,
 };
+
+
+var answerTotal = 0;
+
+for(var i = 0; i < fAnswers.length; i++) {
+  console.log(questions[fAnswers[i]]);
+  answerTotal += questions[fAnswers[i]];
+}
+
 
 // functions
 
