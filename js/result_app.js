@@ -15,7 +15,12 @@ var questions = {
   sunday: 7,
   yes: 2,
   no: 1,
-  noKid: 1,
+  noKid: 0,
+  oneKid: 1,
+  twoKid: 2,
+  threeKids: 3,
+  fourPlusKids: 4,
+  0: 1,
   1: 2,
   2: 3,
   3: 4,
@@ -29,7 +34,13 @@ var questions = {
   collegeL: 5,
   billPast: 6,
   carRepoNFor: 7,
-  morn
+  morning: 1,
+  afternoon: 2,
+  evening: 3,
+  partyTime: 4,
+  lateNight: 5,
+  noDrink: 1,
+  
 }
 
 // functions
