@@ -1,5 +1,5 @@
 'use strict';
-
+// JS below worked on by Beverly and Forrest
 var getForm = document.getElementById('nameDate');
 var drinkingDate = new Date();
 var yearsAgo = drinkingDate.getFullYear() - 21;

@@ -1,5 +1,5 @@
 'use strict';
-
+//JS below working on by Beverly and Mario
 //get username from local storage
 var username = localStorage.getItem('userName');
 
@@ -32,3 +32,5 @@ function handleQuestion(event) {
 questionForm.addEventListener('submit', handleQuestion);
 
 displayName();
+
+// JS below worked on by Jose and Forrest
