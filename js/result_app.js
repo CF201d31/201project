@@ -15,7 +15,7 @@ var questions = {
   sunday: 7,
   yes: 2,
   no: 1,
-  0: 1,
+  noKid: 1,
   1: 2,
   2: 3,
   3: 4,
@@ -29,6 +29,7 @@ var questions = {
   collegeL: 5,
   billPast: 6,
   carRepoNFor: 7,
+  morn
 }
 
 // functions
