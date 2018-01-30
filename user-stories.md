@@ -25,3 +25,5 @@ As a user, I want to answer the questions based on my current situation.
 As a user, I want to receive feedback based on my answers presented in a visually stimulating page. 
 
 As a user, I want to see all my drink options. 
+
+As a user, I want all the pages to have a common theme. 
