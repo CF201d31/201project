@@ -125,9 +125,6 @@ select {
   left: 0%;
   transform: translate(0%, -50%);
   vertical-align: middle;
-  /* display: inline-block;
-  text-align: center; */
-  /* overflow: hidden; */
 }
 
 #display-right {
@@ -147,6 +144,7 @@ select {
   width: 90%;
   margin: auto;
 }
+
 #results-blurb {
   color: #4f8a56;
   padding: 10px;
