@@ -51,9 +51,6 @@ var questions = {
   fiveStress: 6,
 };
 
-
-
-
 function getAnswers() {
   var fAnswers = JSON.parse(localStorage.answers);
   var answerTotal = 0;
