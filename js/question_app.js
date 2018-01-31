@@ -1,9 +1,13 @@
 'use strict';
 
 //get username from local storage
-var username = localStorage.getItem('userName');
+var username = capitalize(localStorage.getItem('userName'));
 
 var questionForm = document.getElementById('question-form');
+
+function capitalize(s) {
+  return s[0].toUpperCase() + s.slice(1);
+}
 
 function displayName() {
   var nameField = document.getElementById('name');
