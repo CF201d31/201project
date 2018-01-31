@@ -36,6 +36,7 @@ h3 {
 p {
   font-size: 30px;
   padding-top: 2px;
+  text-align: center;
 }
 
 .about-div {
@@ -85,10 +86,14 @@ button {
   margin: auto;
 }
 
+#results-img {
+  padding-left: 450px;
+}
+
 #question-form p {
   padding-top: 20px;
   padding-bottom: 10px;
-  color: #4f8a56;  
+  color: #4f8a56;
 }
 
 #question-form {
@@ -116,7 +121,7 @@ select {
 
 .slides {
   width: 100%;
-  margin: auto; 
+  margin: auto;
 }
 
 #display-left {
