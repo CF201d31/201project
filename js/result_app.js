@@ -79,6 +79,7 @@ function getImg(answerTotal) {
   }
 }
 
+
 var total = getAnswers();
 
 displayImg.src = getImg(total);
