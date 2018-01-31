@@ -62,7 +62,23 @@ for(var i = 0; i < fAnswers.length; i++) {
   answerTotal += questions[fAnswers[i]];
 }
 
-
+function getImg() {
+  if(answerTotal < 7 ){
+    return 'img/';
+  } else if(answerTotal < 12) {
+    return '';
+  } else if(answerTotal < 17) {
+    return '';
+  } else if(answerTotal < 22) {
+    return '';
+  } else if(answerTotal < 27) {
+    return '';
+  } else if(answerTotal < 32) {
+    return '';
+  } else if(answerTotal >= 36) {
+    return '';
+  }
+}; 
 // functions
 
 // function call to render page
