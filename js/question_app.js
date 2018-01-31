@@ -1,9 +1,27 @@
 'use strict';
 
+
+var body = document.querySelector('body');
+// body.appendChild('<video src="media/Loading Screen.mp4" autoplay ></video>');
+
+var video = document.createElement('video');
+
+video.setAttribute ('src', 'media/Loading Screen.mp4');
+video.setAttribute ('autoplay', 'true');
+console.log(video);
+
+// createElement('<video src="media/Loading Screen.mp4" autoplay ></video>');
+
 //get username from local storage
-var username = capitalize(localStorage.getItem('userName'));
+var username = 'no user';
+if(localStorage.username){
+  username = capitalize.localStorage.getItem('userName');
+}
+
+// {capitalize);}
 
 var questionForm = document.getElementById('question-form');
+
 
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1);
@@ -28,10 +46,13 @@ function handleQuestion(event) {
   //put results in local storage
   localStorage.setItem('answers', JSON.stringify(answerArray));
 
-  // go to next page
-  window.location.href = 'result.html';
+  questionForm.classList.add('hide');
+
+  body.appendChild(video);
 }
 
 questionForm.addEventListener('submit', handleQuestion);
+
+
 
 displayName();
