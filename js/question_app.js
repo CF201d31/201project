@@ -22,7 +22,7 @@ function handleQuestion(event) {
   var debtQ = event.target.debt.value;
   var answerArray = [dayOfWeekQ, timeOfDayQ, marriedQ, kidsQ, drinksAlreadyQ,stressQ, debtQ];
   //put results in local storage
-  localStorage.setItem('answers', answerArray);
+  localStorage.setItem('answers', JSON.stringify(answerArray));
 
   // go to next page
   window.location.href = 'result.html';
