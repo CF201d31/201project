@@ -66,10 +66,10 @@ function getImg() {
   if(answerTotal < 7 ){
     return 'img/half-full.gif';
   } else if(answerTotal < 12) {
-    return '';
+    return 'img/mimosa.jpg', 'bloody-mary.jpg';
   } else if(answerTotal < 17) {
     return 'img/beer.gif';
-  } else if(answerTotal < 22) {
+  } else if(answerTotal === 18 ) {
     return '';
   } else if(answerTotal < 27) {
     return '';
