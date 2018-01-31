@@ -4,8 +4,6 @@
 var fAnswers = localStorage.answers.split(',');
 // get results from local storage
 
-var imgResults = [];
-
 var displayImg = document.getElementById('results');
 
 var questions = {
@@ -57,18 +55,20 @@ var questions = {
 
 var answerTotal = 0;
 
-for(var i = 0; i < fAnswers.length; i++) {
-  console.log(questions[fAnswers[i]]);
-  answerTotal += questions[fAnswers[i]];
+function getAnswers() {
+  for(var i = 0; i < fAnswers.length; i++) {
+    console.log(questions[fAnswers[i]]);
+    answerTotal += questions[fAnswers[i]];
+  }
 }
 
 function getImg() {
   if(answerTotal < 7 ){
-    return 'img/';
+    return 'img/half-full.gif';
   } else if(answerTotal < 12) {
     return '';
   } else if(answerTotal < 17) {
-    return '';
+    return 'img/beer.gif';
   } else if(answerTotal < 22) {
     return '';
   } else if(answerTotal < 27) {
@@ -76,9 +76,11 @@ function getImg() {
   } else if(answerTotal < 32) {
     return '';
   } else if(answerTotal > 33) {
-    return '';
+    return 'img/half-full.gif';
   }
 }; 
-// functions
 
-// function call to render page
+getAnswers();
+
+
+
