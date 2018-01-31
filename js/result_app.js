@@ -75,7 +75,7 @@ function getImg() {
     return '';
   } else if(answerTotal < 32) {
     return '';
-  } else if(answerTotal >= 36) {
+  } else if(answerTotal > 33) {
     return '';
   }
 }; 
