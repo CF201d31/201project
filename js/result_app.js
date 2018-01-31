@@ -4,6 +4,8 @@
 // get results from local storage
 
 var displayImg = document.getElementById('results-img');
+var titleEl = document.getElementById('result-title');
+var blurbEl = document.getElementById('results-blurb');
 
 var questions = {
   monday: 1,
@@ -61,27 +63,54 @@ function getAnswers() {
   return answerTotal;
 }
 
+function DrinkInfo(blurb, title, drink) {
+  this.blurb = blurb;
+  this.title = title;
+  this.drink = drink;
+}
+
+var water = new DrinkInfo('Water - composed of H20 and sobers you up. We suggest you have a water right now instead of more alcohol.', 'Water', 'img/half-full.gif');
+var mimosa = new DrinkInfo('Mimosa - Composed of one part champagne and one part chilled citrus juice, this drink is what you need to get your weekend funday kick-off. Traditionally served in a tall champagne flute, this brunch favorite will provide you a free-pass to get the party started early before noon!', 'Mimosa', 'img/mimosa.jpg');
+
+
+
+// ['','img/half-full.gif'];
 function getImg(answerTotal) {
   if(answerTotal < 7 ){
-    return 'img/half-full.gif';
+    titleEl.textContent = water.title;
+    blurbEl.textContent = drinkData.blurb;
+    titleEl.textContent = drinkData.title;
+
+    return water;//['','img/half-full.gif'];
   } else if(answerTotal < 12) {
-    return 'img/mimosa.jpg';
+    return ['Have A Mimosa','img/mimosa.jpg'];
   } else if(answerTotal < 17) {
-    return 'img/beer.gif';
+    return ['Have A Beer','img/beer.gif'];
   } else if(answerTotal < 22) {
-    return 'img/icetea.jpg';
+    return water; //,'img/icetea.jpg'];
   } else if(answerTotal < 27) {
-    return 'img/straightwhiskey.png';
+    return ['Have a Shot Of Whiskey','img/straightwhiskey.png'];
   } else if(answerTotal < 32) {
-    return 'img/amf.jpg';
+    return ['You\'ve Had a Stressful Day','img/amf.jpg'];
   } else {
-    return 'img/half-full.gif';
+    return ['You just need water at this point','img/half-full.gif'];
   }
 }
 
 
+titleEl.textContent = mimosa.title;
+
 var total = getAnswers();
 
-displayImg.src = getImg(total);
+var drinkData = getImg(total);
+
+displayImg.src = drinkData.drink;
+
+
+
+
+console.log(drinkData.blurb)
+
+
 
 
