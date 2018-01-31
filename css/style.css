@@ -38,7 +38,7 @@ p {
   padding-top: 2px;
 }
 
-div {
+.about-div {
   float: right;
   padding: 0 20px 10px;
 }
@@ -104,4 +104,39 @@ select {
 #question-form button {
   margin-top: 10px;
   margin-left: 20px;
+}
+
+#slide-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  width: 100%;
+  margin: auto; 
+}
+
+#display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  vertical-align: middle;
+  /* display: inline-block;
+  text-align: center; */
+  /* overflow: hidden; */
+}
+
+#display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  vertical-align: middle;
+}
+
+#drink-blurb {
+  text-align: center;
+  padding: 0;
 }
