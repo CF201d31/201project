@@ -4,9 +4,8 @@ html {
 }
 
 body {
-  background: linear-gradient(steelblue, beige);
+  background-color: #86acc2;
   height: 100%;
-  background-attachment: fixed;
   margin: 20px;
 }
 
