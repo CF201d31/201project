@@ -76,6 +76,10 @@ input {
   border: 2px solid #adf7b6;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   display: block;
   font-size: 20px;
@@ -155,9 +159,21 @@ select {
 #results-blurb {
   color: #4f8a56;
   padding: 10px;
+  text-align: center;
 }
 
 .hide {
   display: none;
 }
 
+#resultb1, #resultb2 {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #4883b4;
+  font-family: Verdana, sans-serif;
+}
+
+#resultb2 {
+  margin-top: 10px;
+}
