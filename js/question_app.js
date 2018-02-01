@@ -2,13 +2,13 @@
 
 var questionForm = document.getElementById('question-form');
 
-var body = document.querySelector('body');
+// var body = document.querySelector('body');
 
-var video = document.createElement('video');
-
-video.setAttribute('src', 'media/LoadingScreen.mp4');
-video.setAttribute('autoplay', 'true');
-console.log(video);
+// var video = document.createElement('video');
+var video = document.getElementsByTagName('video')[0];
+// video.setAttribute('src', 'media/LoadingScreen.mp4');
+// video.setAttribute('autoplay', 'true');
+// console.log(video);
 
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1);
@@ -40,9 +40,11 @@ function handleQuestion(event) {
   localStorage.setItem('answers', JSON.stringify(answerArray));
 
   //play loading video
-  questionForm.classList.add('hide');
-  body.appendChild(video);
-  setTimeout(function() {window.location = 'result.html';}, 3000);
+  // questionForm.classList.add('hide');
+  // body.appendChild(video);
+
+  video.setAttribute('src', 'media/LoadingScreen.mp4');
+  setTimeout(function() {window.location = 'result.html';}, 300000);
 
   // go to next page
   window.location.href = 'result.html';
