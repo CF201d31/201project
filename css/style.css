@@ -7,6 +7,7 @@ body {
   background: linear-gradient(steelblue, beige);
   height: 100%;
   background-attachment: fixed;
+  margin: 20px;
 }
 
 h1 {
@@ -41,6 +42,10 @@ p {
 .about-div {
   float: right;
   padding: 0 20px 10px;
+}
+
+.about-div p {
+  color: #4f8a56;
 }
 
 .profile-pic {
@@ -90,6 +95,11 @@ button {
   margin: auto;
 }
 
+#questionp {
+  text-align: center;
+  margin-top: 5px;
+}
+
 #question-form p {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -108,15 +118,16 @@ select {
 }
 
 #question-form button {
-  margin-top: 10px;
-  margin-left: 20px;
-  margin: auto;
+  margin-top: 20px;
+  color: #4f8a56;
+  border: 2px solid #4883b4;
+  text-align: center;
 }
 
 #slide-container {
   max-width: 500px;
   position: relative;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .slides {
@@ -124,25 +135,29 @@ select {
   margin: auto;
 }
 
-#display-left {
+#display-left, #display-right {
+  cursor: pointer;
+  height: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 50%;
-  left: 0%;
   transform: translate(0%, -50%);
   vertical-align: middle;
+}
+
+#display-left {
+  left: 0%;
 }
 
 #display-right {
-  position: absolute;
-  top: 50%;
   right: 0%;
-  transform: translate(0%, -50%);
-  vertical-align: middle;
 }
 
-#drink-blurb {
+#drink-blurb, #drink-name {
   text-align: center;
   padding: 0;
+  color: #4f8a56;
 }
 
 #results {
