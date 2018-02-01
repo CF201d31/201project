@@ -85,7 +85,5 @@
 
 // Function that is invoked after the konami code has been entered
 function konamiIsDetected() {
-  alert('Cheat Codes Activated');
-  // document.getElementById('cheatStatus').innerHTML = 'Cheat Codes Active';
-  // secretMenu.style.visibility = 'visible';
+  window.location = 'media/oprah.gif';
 }
