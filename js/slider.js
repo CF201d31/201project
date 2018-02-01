@@ -14,6 +14,7 @@ function plusDivs(n) { //eslint-disable-line
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName('slides');
+  console.log(x);
   if (n > x.length) {
     slideIndex = 1;
   }
