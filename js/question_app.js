@@ -10,7 +10,7 @@ video.setAttribute ('src', 'media/Loading Screen.mp4');
 video.setAttribute ('autoplay', 'true');
 console.log(video);
 
-// createElement('<video src="media/Loading Screen.mp4" autoplay ></video>');
+
 
 //get username from local storage
 var username = 'no user';
