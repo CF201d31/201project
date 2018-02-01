@@ -1,10 +1,9 @@
 'use strict';
-// JS below worked on by Beverly and Forrest
+
 var getForm = document.getElementById('nameDate');
 var drinkingDate = new Date();
 var yearsAgo = drinkingDate.getFullYear() - 21;
 drinkingDate.setFullYear(yearsAgo);
-
 
 function handleClick(event) {
   event.preventDefault();
@@ -18,7 +17,7 @@ function determineDrinkingAge(birthDate) {
   if(birthDate <= drinkingDate) {
     window.location.replace('questions.html');
   } else {
-    alert('Sorry, Charlie');
+    alert('Sorry, Charlie. You\'re not old enough to play!');
   }
 }
 

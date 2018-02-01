@@ -1,15 +1,27 @@
 'use strict';
 
-//get username from local storage
-var username = capitalize(localStorage.getItem('userName'));
 
 var questionForm = document.getElementById('question-form');
+
+var body = document.querySelector('body');
+
+var video = document.createElement('video');
+
+video.setAttribute('src', 'media/Loading Screen.mp4');
+video.setAttribute('autoplay', 'true');
+console.log(video);
 
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1);
 }
 
 function displayName() {
+  //get username from local storage
+  if (localStorage.userName) {
+    var username = capitalize(localStorage.getItem('userName'));
+  } else {
+    username = 'no user';
+  }
   var nameField = document.getElementById('name');
   nameField.textContent = 'Hello ' + username + '!';
 }
@@ -27,6 +39,11 @@ function handleQuestion(event) {
   var answerArray = [dayOfWeekQ, timeOfDayQ, marriedQ, kidsQ, drinksAlreadyQ,stressQ, debtQ];
   //put results in local storage
   localStorage.setItem('answers', JSON.stringify(answerArray));
+
+  //play loading video
+  questionForm.classList.add('hide');
+  body.appendChild(video);
+  setTimeout(function() {window.location = 'result.html';}, 3000);
 
   // go to next page
   window.location.href = 'result.html';
