@@ -152,8 +152,12 @@ select {
   width: 40%;
 }
 
-
 #results-blurb {
   color: #4f8a56;
   padding: 10px;
 }
+
+.hide {
+  display: none;
+}
+

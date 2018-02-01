@@ -1,17 +1,5 @@
 'use strict';
 
-var body = document.querySelector('body');
-// body.appendChild('<video src="media/Loading Screen.mp4" autoplay ></video>');
-
-var video = document.createElement('video');
-
-video.setAttribute ('src', 'media/Loading Screen.mp4');
-video.setAttribute ('autoplay', 'true');
-console.log(video);
-
-//get username from local storage
-var username = capitalize(localStorage.getItem('userName'));
-
 var questionForm = document.getElementById('question-form');
 
 function capitalize(s) {
@@ -19,6 +7,12 @@ function capitalize(s) {
 }
 
 function displayName() {
+  //get username from local storage
+  if (localStorage.userName) {
+    var username = capitalize(localStorage.getItem('userName'));
+  } else {
+    username = 'no user';
+  }
   var nameField = document.getElementById('name');
   nameField.textContent = 'Hello ' + username + '!';
 }
@@ -37,8 +31,14 @@ function handleQuestion(event) {
   //put results in local storage
   localStorage.setItem('answers', JSON.stringify(answerArray));
 
-  // go to next page
-  window.location.href = 'result.html';
+  //play loading video
+  var body = document.querySelector('body');
+  var video = document.createElement('video');
+  video.setAttribute('src', 'media/LoadingScreen.mp4');
+  video.setAttribute('autoplay', 'true');
+  questionForm.classList.add('hide');
+  body.appendChild(video);
+  setTimeout(function() {window.location = 'result.html';}, 3800);
 }
 
 questionForm.addEventListener('submit', handleQuestion);
