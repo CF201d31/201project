@@ -2,14 +2,6 @@
 
 var questionForm = document.getElementById('question-form');
 
-var body = document.querySelector('body');
-
-var video = document.createElement('video');
-
-video.setAttribute('src', 'media/LoadingScreen.mp4');
-video.setAttribute('autoplay', 'true');
-console.log(video);
-
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1);
 }
@@ -40,6 +32,10 @@ function handleQuestion(event) {
   localStorage.setItem('answers', JSON.stringify(answerArray));
 
   //play loading video
+  var body = document.querySelector('body');
+  var video = document.createElement('video');
+  video.setAttribute('src', 'media/LoadingScreen.mp4');
+  video.setAttribute('autoplay', 'true');
   questionForm.classList.add('hide');
   body.appendChild(video);
   setTimeout(function() {window.location = 'result.html';}, 3000);
