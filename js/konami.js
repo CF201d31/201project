@@ -85,5 +85,5 @@
 
 // Function that is invoked after the konami code has been entered
 function konamiIsDetected() {
-  window.location = 'img/giphy.gif';
+  window.location = 'media/oprah.gif';
 }
