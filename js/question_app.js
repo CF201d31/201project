@@ -1,6 +1,5 @@
 'use strict';
 
-
 var body = document.querySelector('body');
 // body.appendChild('<video src="media/Loading Screen.mp4" autoplay ></video>');
 
@@ -10,18 +9,10 @@ video.setAttribute ('src', 'media/Loading Screen.mp4');
 video.setAttribute ('autoplay', 'true');
 console.log(video);
 
-
-
 //get username from local storage
-var username = 'no user';
-if(localStorage.username){
-  username = capitalize.localStorage.getItem('userName');
-}
-
-// {capitalize);}
+var username = capitalize(localStorage.getItem('userName'));
 
 var questionForm = document.getElementById('question-form');
-
 
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1);
@@ -46,15 +37,10 @@ function handleQuestion(event) {
   //put results in local storage
   localStorage.setItem('answers', JSON.stringify(answerArray));
 
-  questionForm.classList.add('hide');
-
-  body.appendChild(video);
-  setTimeout(function(){window.location = 'result.html';}, 3000);
+  // go to next page
+  window.location.href = 'result.html';
 }
 
-
 questionForm.addEventListener('submit', handleQuestion);
-
-
 
 displayName();
