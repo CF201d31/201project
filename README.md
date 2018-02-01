@@ -27,3 +27,5 @@ By Mario Flores, and Jose Flores, Forrest Hosten, Beverly Pham
 - https://codepen.io/MarcMalignan/pen/svLux
 - https://media1.tenor.com/images/b7fc556c96a04f7c0fcd7f5ef141c4bc/tenor.gif?itemid=5778731
 - giphy.com
+- www.flaticon.com/ for email icon
+- https://www.iconfinder.com/ for github and linkedin icons

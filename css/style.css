@@ -95,7 +95,7 @@ button {
   margin: auto;
 }
 
-#questionp {
+#questionp, #sliderp {
   text-align: center;
   margin-top: 5px;
 }
