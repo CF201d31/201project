@@ -1,13 +1,12 @@
 'use strict';
 
-
 var questionForm = document.getElementById('question-form');
 
 var body = document.querySelector('body');
 
 var video = document.createElement('video');
 
-video.setAttribute('src', 'media/Loading Screen.mp4');
+video.setAttribute('src', 'media/LoadingScreen.mp4');
 video.setAttribute('autoplay', 'true');
 console.log(video);
 
