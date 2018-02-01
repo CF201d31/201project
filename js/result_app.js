@@ -83,45 +83,45 @@ function getImg(answerTotal) {
     titleEl.textContent = beer.title;
     blurbEl.textContent = beer.blurb;
   } else if (answerTotal < 11) {
-    imgEl.src = mimosa.image;
-    titleEl.textContent = mimosa.title;
-    blurbEl.textContent = mimosa.blurb;
-  } else if (answerTotal < 13) {
     imgEl.src = wine.image;
     titleEl.textContent = wine.title;
     blurbEl.textContent = wine.blurb;
+  } else if (answerTotal < 13) {
+    imgEl.src = mimosa.image;
+    titleEl.textContent = mimosa.title;
+    blurbEl.textContent = mimosa.blurb;
   } else if (answerTotal < 15) {
     imgEl.src = bloodyMary.image;
     titleEl.textContent = bloodyMary.title;
     blurbEl.textContent = bloodyMary.blurb;
   } else if (answerTotal < 17) {
-    imgEl.src = amf.image;
-    titleEl.textContent = amf.title;
-    blurbEl.textContent = amf.blurb;
+    imgEl.src = margarita.image;
+    titleEl.textContent = margarita.title;
+    blurbEl.textContent = margarita.blurb;
   } else if (answerTotal < 19) {
-    imgEl.src = tequila.image;
-    titleEl.textContent = tequila.title;
-    blurbEl.textContent = tequila.blurb;
+    imgEl.src = jackCoke.image;
+    titleEl.textContent = jackCoke.title;
+    blurbEl.textContent = jackCoke.blurb;
   } else if (answerTotal < 21) {
     imgEl.src = vodkaRedbull.image;
     titleEl.textContent = vodkaRedbull.title;
     blurbEl.textContent = vodkaRedbull.blurb;
   } else if (answerTotal < 23) {
+    imgEl.src = tequila.image;
+    titleEl.textContent = tequila.title;
+    blurbEl.textContent = tequila.blurb;
+  } else if (answerTotal < 25) {
     imgEl.src = whiskey.image;
     titleEl.textContent = whiskey.title;
     blurbEl.textContent = whiskey.blurb;
-  } else if (answerTotal < 25) {
-    imgEl.src = margarita.image;
-    titleEl.textContent = margarita.title;
-    blurbEl.textContent = margarita.blurb;
   } else if (answerTotal < 27) {
     imgEl.src = icedTea.image;
     titleEl.textContent = icedTea.title;
     blurbEl.textContent = icedTea.blurb;
   } else if (answerTotal < 29) {
-    imgEl.src = jackCoke.image;
-    titleEl.textContent = jackCoke.title;
-    blurbEl.textContent = jackCoke.blurb;
+    imgEl.src = amf.image;
+    titleEl.textContent = amf.title;
+    blurbEl.textContent = amf.blurb;
   } else {
     imgEl.src = water.image;
     titleEl.textContent = water.title;
