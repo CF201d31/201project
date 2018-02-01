@@ -1,5 +1,14 @@
 'use strict';
 
+var body = document.querySelector('body');
+// body.appendChild('<video src="media/Loading Screen.mp4" autoplay ></video>');
+
+var video = document.createElement('video');
+
+video.setAttribute ('src', 'media/Loading Screen.mp4');
+video.setAttribute ('autoplay', 'true');
+console.log(video);
+
 //get username from local storage
 var username = capitalize(localStorage.getItem('userName'));
 
