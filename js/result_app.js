@@ -4,6 +4,8 @@
 var imgEl = document.getElementById('results-img');
 var titleEl = document.getElementById('result-title');
 var blurbEl = document.getElementById('results-blurb');
+// all drinks array to put into local storage
+var allDrinks = [];
 
 // object to value answers
 var questions = {
@@ -67,6 +69,7 @@ function DrinkInfo(image, title, blurb) {
   this.image = image;
   this.title = title;
   this.blurb = blurb;
+  allDrinks.push(this);
 }
 
 // which drink displays depending on total score
@@ -135,10 +138,12 @@ var amf = new DrinkInfo('img/AMF.jpg', 'AMF', 'You’ve had a hard week and you 
 var tequila = new DrinkInfo('img/tequila-shot.jpg', 'Shot', 'Take everything in moderation, including moderation!');
 var vodkaRedbull = new DrinkInfo('img/vodka-redbull.jpg', 'Vodka Redbull', 'Perfect for the hard working professional who still wants to champion through the night, the Vodka Redbull never fails to provide you with a much needed second wind. Kill two birds with one stone, and kiss your fatigue and stress goodbye!');
 var jackCoke = new DrinkInfo('img/jackandcoke.jpg', 'Jack and Coke', 'You\'ve been through some tough obstacles this week, and this whiskey and cola mix is just what you need to dial down. The strength and acquired taste of the whiskey is drowned in ten ounces of cola, just enough to momentarily drown your troubles away.');
-var whiskey = new DrinkInfo('img/straightwhiskey.png', 'Straight Whiskey', 'Whiskey is good');
-// var hotToddy = new DrinkInfo('img/hot-toddy.jpg', 'Hot Toddy', 'Hot Toddy blurb');
+var whiskey = new DrinkInfo('img/straightwhiskey.png', 'Straight Whiskey', 'There is no sugar-coating with you. You are a straight shooter, and you know what you want, and what you want is straight whiskey to dial down from the week!');
 var margarita = new DrinkInfo('img/margarita.jpg', 'Margarita', 'The sun is out and outdoor dining is calling your name. A margarita is just what you need to unwind! Consisting of tequila, triple sec, and lime juice, this drink can be served frozen or on the rocks.');
-var wine = new DrinkInfo('img/wine.jpg', 'Wine', 'Relax with a nice glass of wine.');
+var wine = new DrinkInfo('img/wine.jpg', 'Wine', 'Whether you want a night of binge watching or a night out on the town, wine will always be there to calm you down.');
 var icedTea = new DrinkInfo('img/icetea.jpg', 'Long Island Iced Tea', 'A combination of innocent name-branding and high alcohol concentration makes this deceptive drink a pleasant surprise. Made from vodka, tequila, light rum, triple sec, gin, and a splash of cola for color, this beverage will sneak up on you just like the weekend!');
 
 getAnswers();
+
+// put array in local storage
+localStorage.setItem('allDrinks', JSON.stringify(allDrinks));

@@ -123,7 +123,7 @@ select {
 #slide-container {
   max-width: 500px;
   position: relative;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .slides {
@@ -131,25 +131,29 @@ select {
   margin: auto;
 }
 
-#display-left {
+#display-left, #display-right {
+  cursor: pointer;
+  height: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 50%;
-  left: 0%;
   transform: translate(0%, -50%);
   vertical-align: middle;
+}
+
+#display-left {
+  left: 0%;
 }
 
 #display-right {
-  position: absolute;
-  top: 50%;
   right: 0%;
-  transform: translate(0%, -50%);
-  vertical-align: middle;
 }
 
-#drink-blurb {
+#drink-blurb, #drink-name {
   text-align: center;
   padding: 0;
+  color: #4f8a56;
 }
 
 #results {
