@@ -38,7 +38,7 @@ function handleQuestion(event) {
   video.setAttribute('autoplay', 'true');
   questionForm.classList.add('hide');
   body.appendChild(video);
-  setTimeout(function() {window.location = 'result.html';}, 3000);
+  setTimeout(function() {window.location = 'result.html';}, 3800);
 
   // go to next page
   // window.location.href = 'result.html';

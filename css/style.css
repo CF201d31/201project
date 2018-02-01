@@ -145,6 +145,13 @@ select {
   margin: auto;
 }
 
+#results-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 #results-blurb {
   color: #4f8a56;
   padding: 10px;
