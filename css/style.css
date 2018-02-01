@@ -44,6 +44,10 @@ p {
   padding: 0 20px 10px;
 }
 
+.about-div p {
+  color: #4f8a56;
+}
+
 .profile-pic {
   border-radius: 50%;
   float: left;
