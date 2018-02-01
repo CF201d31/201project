@@ -39,9 +39,6 @@ function handleQuestion(event) {
   questionForm.classList.add('hide');
   body.appendChild(video);
   setTimeout(function() {window.location = 'result.html';}, 3800);
-
-  // go to next page
-  // window.location.href = 'result.html';
 }
 
 questionForm.addEventListener('submit', handleQuestion);
