@@ -4,21 +4,21 @@ html {
 }
 
 body {
-  background-color: #86acc2;
+  background-color: #93c7d4;
   height: 100%;
   margin: 20px;
 }
 
 h1 {
   font-family: 'Baloo Bhaijaan', cursive;
-  color: #a0ced9;
+  color: #3e6993;
   font-size: 60px;
   text-align: center;
 }
 
 h2, h3, p {
   font-family: 'Shanti', sans-serif;
-  color: #ffc09f;
+  color: #442da4;
   padding-left: 20px;
 }
 
@@ -44,7 +44,7 @@ p {
 }
 
 .about-div p {
-  color: #4f8a56;
+  color: #244e29;
 }
 
 .profile-pic {
@@ -63,7 +63,7 @@ video {
   margin: auto;
   text-align: center;
   font-size: 20px;
-  color: #adf7b6;
+  color: #244e29;
   font-family: 'Shanti', sans-serif;
 }
 
@@ -77,12 +77,12 @@ input {
   width: 200px;
   height: 20px;
   font-size: 20px;
-  border: 2px solid #adf7b6;
+  border: 2px solid #244e29;
 }
 
 a {
   text-decoration: none;
-  color: #4883b4;
+  color: #000;
 }
 
 button {
@@ -90,7 +90,7 @@ button {
   font-size: 20px;
   padding: 5px;
   text-align: center;
-  background-color: #fcf5c7;
+  background-color: #3e6993;
   margin: auto;
 }
 
@@ -102,7 +102,7 @@ button {
 #question-form p {
   padding-top: 20px;
   padding-bottom: 10px;
-  color: #4f8a56;
+  color: #244e29;
 }
 
 #question-form {
@@ -113,13 +113,13 @@ button {
 select {
   margin-left: 20px;
   font-size: 25px;
-  border: 2px solid #adf7b6;
+  border: 2px solid #244e29;
 }
 
 #question-form button {
   margin-top: 20px;
-  color: #4f8a56;
-  border: 2px solid #4883b4;
+  color: #000;
+  border: 2px solid #3e6993;
   text-align: center;
 }
 
@@ -156,7 +156,7 @@ select {
 #drink-blurb, #drink-name {
   text-align: center;
   padding: 0;
-  color: #4f8a56;
+  color: #244e29;
 }
 
 #results {
@@ -173,7 +173,7 @@ select {
 }
 
 #results-blurb {
-  color: #4f8a56;
+  color: #244e29;
   padding: 10px;
   text-align: center;
 }
@@ -186,7 +186,7 @@ select {
   margin-top: 20px;
   padding: 10px;
   text-align: center;
-  border: 2px solid #4883b4;
+  border: 2px solid #3e6993;
   font-family: Verdana, sans-serif;
 }
 
