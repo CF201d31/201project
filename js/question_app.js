@@ -2,6 +2,7 @@
 
 var questionForm = document.getElementById('question-form');
 
+// capitalize first letter of username
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1);
 }
