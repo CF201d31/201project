@@ -1,6 +1,5 @@
 'use strict';
 
-// global variables
 var imgEl = document.getElementById('results-img');
 var titleEl = document.getElementById('result-title');
 var blurbEl = document.getElementById('results-blurb');
@@ -143,7 +142,7 @@ var margarita = new DrinkInfo('img/margarita.jpg', 'Margarita', 'The sun is out 
 var wine = new DrinkInfo('img/wine.jpg', 'Wine', 'Whether you want a night of binge watching or a night out on the town, wine will always be there to calm you down.');
 var icedTea = new DrinkInfo('img/icetea.jpg', 'Long Island Iced Tea', 'A combination of innocent name-branding and high alcohol concentration makes this deceptive drink a pleasant surprise. Made from vodka, tequila, light rum, triple sec, gin, and a splash of cola for color, this beverage will sneak up on you just like the weekend!');
 
-getAnswers();
-
-// put array in local storage
+// put array in local storage to use for slideshow blurb
 localStorage.setItem('allDrinks', JSON.stringify(allDrinks));
+
+getAnswers();
