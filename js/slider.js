@@ -4,7 +4,7 @@ var divEl = document.getElementById('slide-container');
 var h3El = document.getElementById('drink-name');
 var pEl = document.getElementById('drink-blurb');
 
-//get drinks from local storage
+//get drink blurbs from local storage
 var allDrinks = JSON.parse(localStorage.allDrinks);
 
 var slideIndex = 1;
@@ -33,13 +33,14 @@ function showDivs(n) {
 }
 
 function imgClick(event) {
-  // if click has an alt, do this
+  // if target has an alt tag, display drink blurb
   if (event.target.alt) {
     for (var i in allDrinks) {
       if (allDrinks[i].title === event.target.alt) {
         pEl.textContent = allDrinks[i].blurb;
       }
     }
+    // else if click arrow to scroll
   } else {
     pEl.textContent = '';
   }

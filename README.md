@@ -11,6 +11,7 @@ By Mario Flores, and Jose Flores, Forrest Hosten, Beverly Pham
 - color scheme: https://coolors.co/
 - slideshow: https://www.w3schools.com/w3css/w3css_slideshow.asp
 - edit GIF: https://giphy.com/create/gifmaker/decorate/caption
+- konami code: http://en.wikipedia.org/wiki/Konami_Code and https://github.com/WGJBV/catfight/blob/master/konami.js
 
 #### Images Sources:
 - http://cdn1.foodviva.com/static-content/food-images/cocktail-recipes/orange-mimosa-recipe/orange-mimosa-recipe.jpg 
