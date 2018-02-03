@@ -5,12 +5,19 @@ I'll Drink To That!!
 
 By Mario Flores, and Jose Flores, Forrest Hosten, Beverly Pham
 
+There is a culture of hard working professionals and students who experience a high volume of stress throughout the work week. After all the work has been put in, many of those in this demographic seek recreational merriment. Commonly, this recreational merriment involves just having a simple alcoholic beverage to wind down. That’s where the “I’ll Drink To That” web application comes into play. This brilliant app utilizes a series of survey questions that contribute to an overall score that present the user with a suggested alcoholic beverage selection. The higher the stress level, the stronger the drink content.
+
+### Languages
+- HTML
+- CSS
+- Vanilla JavaScript
+
 ### Resources
 - CSS reset: https://meyerweb.com/eric/tools/css/reset/
 - avatars made with: http://avatarmaker.com/
-- color scheme: https://coolors.co/
 - slideshow: https://www.w3schools.com/w3css/w3css_slideshow.asp
 - edit GIF: https://giphy.com/create/gifmaker/decorate/caption
+- konami code: http://en.wikipedia.org/wiki/Konami_Code and https://github.com/WGJBV/catfight/blob/master/konami.js
 
 #### Images Sources:
 - http://cdn1.foodviva.com/static-content/food-images/cocktail-recipes/orange-mimosa-recipe/orange-mimosa-recipe.jpg 
